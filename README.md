@@ -27,6 +27,11 @@ Example:
     documentation line 2
     */ 
     
+Inline comments are ignored to make the final output more readable.
+
+    /* This comment in your CSS will be ignored ! */
+
+    
 Then run `cssd` on your CSS file. It will generate a HTML file named as your CSS.
 
 ## Examples

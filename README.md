@@ -31,7 +31,7 @@ Then run `cssd` on your CSS file. It will generate a HTML file named as your CSS
 
 ## Examples
 
-Check the `base.css` and 'base.html` files. The first was the input, the second the output.
+Check the `base.css` and `base.html` files. The first was the input, the second the output.
 
 
 ## Licence

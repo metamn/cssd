@@ -45,6 +45,6 @@ unless ARGV.empty?
 else
   puts "Generate documentation from CSS through Markdown into HTML." 
   puts " - Usage: cssd filename (without extension, .css is used automaticaly)"
-  puts " - Input files are taken from /assets"
-  puts " - Output files are put into /doc"
+  puts " - Input files are taken from current directory"
+  puts " - Output files are put into current directory"
 end

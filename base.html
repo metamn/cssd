@@ -1,0 +1,159 @@
+<h1>CSS Resets, Hacks, and Common Elements</h1>
+
+<ul>
+<li>File name: <a href="base.css">base.css</a></li>
+<li>This is a basic stylesheet to prepare/reset the browser and the HTML elements</li>
+<li>Author: <a href="http://shopledge.com" title="Shopledge">Shopledge</a></li>
+<li>License: none (public domain)</li>
+</ul>
+
+
+<hr />
+
+<h2>Reset and format all basic elements</h2>
+
+<ul>
+<li>CSS Reset by Eric Meyers</li>
+<li><a href="http://meyerweb.com/eric/tools/css/reset/">Source</a></li>
+<li>v2.0 | 20110126</li>
+<li>License: none (public domain)</li>
+</ul>
+
+
+<h2>Hacks</h2>
+
+<h3>Breaking long lines of text</h3>
+
+<ul>
+<li>Prevent unbroken strings from breaking the layout</li>
+<li><a href="http://stackoverflow.com/questions/320184/who-has-solved-the-long-word-breaks-my-div-problem-hint-not-stackoverflow">Source</a></li>
+<li>add the <strong>word-break</strong> class to a paragraph to apply this hack</li>
+</ul>
+
+
+<h2>Lists</h2>
+
+<ul>
+<li>both <code>&lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;</code> items are indented in the same way</li>
+<li>items are separated by a blank line</li>
+<li>cascading lists identation is also supported</li>
+</ul>
+
+
+<h2>Tables</h2>
+
+<ul>
+<li>table header is bold</li>
+<li>table rows are separated with a blank line</li>
+<li>all cells are aligned to top</li>
+<li>all cells are padded</li>
+<li>normal cells are indented related to table header</li>
+<li>no borders were used</li>
+</ul>
+
+
+<h2>Forms</h2>
+
+<ul>
+<li>select is left unstyled (it cannot be styled via CSS), in rest all elements are ready to use</li>
+<li>input, select and textarea have equal width</li>
+<li>input, select, textarea and buttons are padded and rounded equally</li>
+<li>buttons have hover effect</li>
+<li><p>some general rules of usage:</p>
+
+<ul>
+<li>all text input fields must have a <strong>.text</strong> class associated</li>
+<li>all form buttons must have a <strong>.button</strong> class associated</li>
+<li>a link can be styled to look like a button with the <strong>.button</strong> class</li>
+<li>radio and checkbox values must be embedded into an <code>&lt;ul&gt;</code> list</li>
+<li>form buttons must be embedded into an inline <code>&lt;ul&gt;</code> list</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Typography</h2>
+
+<ul>
+<li>It is supposed to general typography rules will be set up using <a href="http://lamb.cc/typograph/">Typograph</a> in
+<a href="layout.css">layout.css</a></li>
+<li>This section contains just small, additional alignments</li>
+</ul>
+
+
+<h3><code>&lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</code></h3>
+
+<ul>
+<li>They all have normal sizes like paragraphs</li>
+<li><code>&lt;h4&gt;</code> is bold</li>
+<li><code>&lt;h5&gt;</code> is small caps</li>
+<li><code>&lt;h6&gt;</code> is italic</li>
+</ul>
+
+
+<h3><code>&lt;p&gt;</code></h3>
+
+<ul>
+<li>Every second paragraph is indented</li>
+<li>After the first paragraph all the following paragraphs are separated with a blank line</li>
+</ul>
+
+
+<h3><code>&lt;sub&gt;, &lt;sup&gt;</code></h3>
+
+<ul>
+<li>done</li>
+</ul>
+
+
+<h3><code>&lt;cite&gt;, &lt;acronym&gt;, &lt;abbr&gt;, &lt;pre&gt;</code></h3>
+
+<ul>
+<li>not styled, they've just been set to italic</li>
+</ul>
+
+
+<h3><code>&lt;blockquote&gt;</code></h3>
+
+<ul>
+<li>not styled, just the left margin set</li>
+</ul>
+
+
+<h2>Images, Thumbs</h2>
+
+<ul>
+<li><p>Displaying thumbs is easy with the following structure:</p>
+
+<pre><code>.item         # aligning to grid
+  .inner      # padding, positioning, backgrounding, etc
+    .image    # cropping, sizing etc
+      img
+    .text     # not necessary but looks structured
+      blabla
+</code></pre></li>
+<li><p>Guidelines for using thumbs / image grids on responsive layout</p>
+
+<ul>
+<li>MAKE SURE the user submits correctly sized images !!!</li></li>
+<li>Choose a grid which supports 6, 4, 3, 2, 1 images / row</li>
+<li>Avoid displaying 6 images / row. Do it only of the images are already scaled down</li>
+<li>Text / caption under image is breaking the layout / the height. Try putting the caption on top!</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Commonly used classes // CSS Helpers</h2>
+
+<ul>
+<li><strong>.link</strong>  - makes an element looking like a link. On hover the cursor will be a pointer</li>
+<li><strong>.block</strong>  - makes sure the element fills the all available space</li>
+<li><strong>.left, .right</strong> - floats left or right</li>
+<li><strong>.alignright, .alignleft, .aligncenter</strong> - aligns right, left or center</li>
+<li><strong>.hidden</strong> - hide an element</li>
+<li><strong>ul.inline-list</strong> - displays an <code>&lt;ul&gt;</code> inline (like a menu)</li>
+<li><strong>.triangle</strong> - ads an arrow like in the <a href="http://gadgetoman.myshopify.com">Gadgetoman theme</a></li>
+<li><strong>.mobile</strong> - hides an element in desktop mode (it's like .hidden)</li>
+</ul>
+
